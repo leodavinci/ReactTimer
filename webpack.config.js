@@ -4,9 +4,9 @@ module.exports = {
     entry: [
         'script!jquery/dist/jquery.min.js',
         'script!foundation-sites/dist/foundation.min.js',
-        "./app/app.jsx"
+        './app/app.jsx'
     ],
-    external: {
+    externals: {
         jquery: 'jQuery'
     },
     plugins: [
@@ -23,8 +23,8 @@ module.exports = {
         root: __dirname,
         alias: {
             Main: 'app/components/Main.jsx',
-            Navigation: 'app/components/Navigation.jsx',
-            applicationStyles: 'app/styles/app.scss'
+            applicationStyles: 'app/styles/app.scss',
+            Navigation: 'app/components/Navigation.jsx'
         },
         extensions: ['', '.js', '.jsx']
     },
@@ -40,5 +40,5 @@ module.exports = {
             }
         ]
     },
-    devtools: 'cheap-module-eval-source-map'
+    devtool: 'cheap-module-eval-source-map'
 };
